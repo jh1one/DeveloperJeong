@@ -1,0 +1,13 @@
+git push & pull 사용법
+
+push
+1. 파일 생성
+2. git status
+3. git add 파일 이름.파일형식
+4. git status 
+5. git commit -m "~"
+6. git push origin master
+
+
+pull
+1. git pull  
