@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void SelectSort(int* arr, int size)
+void SelectionSort(int* arr, int size)
 {
 	int i, j, min, temp, idx;
 	for (i = 0; i < size; i++) {
