@@ -1,7 +1,7 @@
 //#include <stdio.h>
 //
 //template <typename T>
-//class STACK{
+//class STACK {
 //public:
 //	STACK<T>(int theCapacity = 100) : capacity(theCapacity) {
 //		capacity = theCapacity;
@@ -9,8 +9,8 @@
 //		count = 0;
 //	}
 //public:
-//	T Top() {	
-//		if(count > 0) return top; 
+//	T Top() {
+//		if (count > 0) return top;
 //		else return -1;
 //	}
 //
@@ -30,7 +30,7 @@
 //		}
 //	}
 //
-//	int size() {	return this->count;	}
+//	int size() { return this->count; }
 //
 //	bool isEmpty() {
 //		if (count == 0)	return true;
@@ -48,9 +48,9 @@
 //	scanf_s("%d", &n);
 //	STACK<int> stack(n);
 //	getchar();
-//	char order[7];
+//	char order[6];
 //	for (int i = 0; i < n; i++) {
-//		scanf_s("%s", order);
+//		scanf_s("%s", order, sizeof(order));
 //		switch (order[0]) {
 //		case 'p':
 //			if (order[1] == 'u') {
@@ -61,15 +61,14 @@
 //				stack.pop();
 //			}
 //			break;
-//		case 't': 
-//			printf("%d\n", stack.Top());// << '\n';
+//		case 't':
+//			printf("%d\n", stack.Top());
 //			break;
 //		case 'e':
-//			//cout << stack.isEmpty() << '\n';
-//			printf("%d\n", stack.isEmpty());
+//			if (stack.isEmpty())	printf("1\n");
+//			else printf("0\n");
 //			break;
 //		case 's':
-//			//cout << stack.size() << '\n';
 //			printf("%d\n", stack.size());
 //			break;
 //		}
